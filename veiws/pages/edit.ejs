@@ -1,0 +1,40 @@
+<%- include('../partials/header') %>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2 class="mb-4">Edit Recipe: <%= recipe.title %></h2>
+        
+        <!-- Note the ?_method=PUT to trigger the update route -->
+        <form action="/recipes/<%= recipe._id %>?_method=PUT" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Recipe Title</label>
+                <input type="text" class="form-control" name="recipe[title]" value="<%= recipe.title %>" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Image URL</label>
+                <input type="text" class="form-control" name="recipe[image]" value="<%= recipe.image %>">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control" name="recipe[description]" value="<%= recipe.description %>" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ingredients</label>
+                <textarea class="form-control" name="recipe[ingredients]" rows="3" required><%= recipe.ingredients %></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Cooking Instructions</label>
+                <textarea class="form-control" name="recipe[instructions]" rows="5" required><%= recipe.instructions %></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-info">Update Recipe</button>
+            <a href="/recipes/<%= recipe._id %>" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
