@@ -1,0 +1,27 @@
+{
+  "name": "assignment-3",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000A\u0000s\u0000s\u0000i\u0000n\u0000g\u0000m\u0000e\u0000n\u0000t\u0000_\u00003\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolantoshack/Assingment_3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nolantoshack/Assingment_3/issues"
+  },
+  "homepage": "https://github.com/nolantoshack/Assingment_3#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.0.0"
+  }
+}
